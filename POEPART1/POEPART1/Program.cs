@@ -114,37 +114,45 @@ class Program
     // ===============================
     // RESPONSE SYSTEM
     // ===============================
-    static void Respond(string input)
+static void Respond(string input)
+{
+    Console.ForegroundColor = ConsoleColor.Yellow;
+
+    if (input.Contains("how are you"))
     {
-        Console.ForegroundColor = ConsoleColor.Yellow;
-
-        if (input.Contains("how are you"))
-        {
-            TypeEffect("Bot: My circuits are optimal and my firewall is up! How are you?");
-        }
-        else if (input.Contains("purpose"))
-        {
-            TypeEffect("Bot: My purpose is to teach you about cybersecurity and staying safe online.");
-        }
-        else if (input.Contains("password"))
-        {
-            TypeEffect("Bot: Use strong passwords (12+ characters) with a mix of types. Consider a Password Manager!");
-        }
-        else if (input.Contains("phishing"))
-        {
-            TypeEffect("Bot: Look for 'sense of urgency' or weird sender addresses. When in doubt, don't click!");
-        }
-        else if (input.Contains("safe browsing"))
-        {
-            TypeEffect("Bot: Check for HTTPS, avoid public Wi-Fi for banking, and keep your browser updated.");
-        }
-        else
-        {
-            TypeEffect("Bot: I'm not sure about that specific topic. Try asking about passwords or phishing!");
-        }
-
-        Console.ResetColor();
+        TypeEffect("Bot: I'm operating at full capacity and ready to help! My main goal is to assist you in understanding cybersecurity and protecting yourself online.");
     }
+    else if (input.Contains("purpose"))
+    {
+        TypeEffect("Bot: My purpose is to educate users about cybersecurity risks and best practices. I help you understand how to protect your personal data, avoid scams, and stay safe while browsing the internet.");
+    }
+    else if (input.Contains("password"))
+    {
+        TypeEffect("Bot: Strong passwords are essential for protecting your accounts. You should use a combination of uppercase and lowercase letters, numbers, and special characters. Avoid using personal information like your name or birthdate, and never reuse passwords across multiple accounts. Consider using a password manager for extra security.");
+    }
+    else if (input.Contains("phishing"))
+    {
+        TypeEffect("Bot: Phishing is a type of cyber attack where attackers trick you into revealing sensitive information such as passwords or banking details. These attacks often come through emails or messages that look legitimate. Always verify the sender, avoid clicking suspicious links, and never provide personal information unless you are sure the source is trustworthy.");
+    }
+    else if (input.Contains("safe browsing"))
+    {
+        TypeEffect("Bot: Safe browsing means being cautious about the websites you visit and the links you click. Always check for HTTPS in the website URL, avoid downloading files from untrusted sources, and keep your browser and antivirus software up to date to protect against threats.");
+    }
+    else if (input.Contains("malware"))
+    {
+        TypeEffect("Bot: Malware is malicious software designed to harm your device or steal your data. It can come from unsafe downloads, email attachments, or infected websites. To stay protected, install antivirus software, avoid suspicious downloads, and keep your system updated.");
+    }
+    else if (input.Contains("vpn"))
+    {
+        TypeEffect("Bot: A VPN, or Virtual Private Network, helps protect your privacy online by encrypting your internet connection. It is especially useful when using public Wi-Fi, as it prevents hackers from intercepting your data.");
+    }
+    else
+    {
+        TypeEffect("Bot: I didn’t quite understand that. You can ask me about topics like passwords, phishing, malware, VPNs, or safe browsing.");
+    }
+
+    Console.ResetColor();
+}
 
     // ===============================
     // TYPING EFFECT
