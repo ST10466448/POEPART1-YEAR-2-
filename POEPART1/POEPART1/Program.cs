@@ -11,6 +11,14 @@ class Program
         ShowAsciiArt();
         PlayVoiceGreeting();
         string userName = GetUserName();
+        Console.WriteLine("\nYou can ask me about:");
+        Console.WriteLine("- Passwords");
+        Console.WriteLine("- Phishing");
+        Console.WriteLine("- Malware");
+        Console.WriteLine("- VPN");
+        Console.WriteLine("- Safe browsing");
+        Console.WriteLine("Type 'exit' to quit.\n");
+
         ChatLoop(userName);
     }
 
