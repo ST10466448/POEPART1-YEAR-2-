@@ -22,9 +22,9 @@ class Program
         ChatLoop(userName);
     }
 
-    // ===============================
+  
     // ASCII ART HEADER
-    // ===============================
+   
     static void ShowAsciiArt()
     {
         Console.ForegroundColor = ConsoleColor.Cyan;
@@ -53,9 +53,9 @@ class Program
         Console.ResetColor();
     }
 
-    // ===============================
+    
     // VOICE GREETING
-    // ===============================
+   
     static void PlayVoiceGreeting()
     {
         try
@@ -72,9 +72,9 @@ class Program
         }
     }
 
-    // ===============================
+    
     // USER NAME INPUT
-    // ===============================
+    
     static string GetUserName()
     {
         Console.Write("\nEnter your name: ");
@@ -93,9 +93,9 @@ class Program
         return name;
     }
 
-    // ===============================
+    
     // CHAT SYSTEM
-    // ===============================
+    
     static void ChatLoop(string userName)
     {
         while (true)
@@ -119,9 +119,9 @@ class Program
         }
     }
 
-    // ===============================
+    
     // RESPONSE SYSTEM
-    // ===============================
+   
 static void Respond(string input)
 {
     Console.ForegroundColor = ConsoleColor.Yellow;
@@ -162,9 +162,9 @@ static void Respond(string input)
     Console.ResetColor();
 }
 
-    // ===============================
+  
     // TYPING EFFECT
-    // ===============================
+
     static void TypeEffect(string message)
     {
         foreach (char c in message)
