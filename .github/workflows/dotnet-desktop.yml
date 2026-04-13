@@ -17,8 +17,8 @@ jobs:
       with:
         dotnet-version: '8.0.x'
 
-    - name: Restore
-      run: dotnet restore
+- name: Restore
+  run: dotnet restore POEPART1/POEPART1/POEPART1.csproj
 
-    - name: Build
-      run: dotnet build --no-restore
+- name: Build
+  run: dotnet build POEPART1/POEPART1/POEPART1.csproj --no-restore
